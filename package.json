@@ -2,7 +2,7 @@
   "name": "now-ui-kit-react",
   "version": "1.5.2",
   "private": true,
-  "homepage": "https://DanielSan666.github.io/sanchez_examen",
+  "homepage": "https://DanielSan666.github.io/reyes_examen_p1",
   "dependencies": {
     "gh-pages": "^6.1.1",
     "moment": "2.29.4",
@@ -20,12 +20,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
-    "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed"
   },
   "eslintConfig": {
     "extends": "react-app"
